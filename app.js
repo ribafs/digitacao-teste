@@ -138,7 +138,7 @@ function displayScore(){
   timeName.innerText = "PA";
 
   cw.innerText = factor*wordsCorrect;
-  cwName.innerText = "WPM";
+  cwName.innerText = "PPM";// WPM
 }
 
 //check if the user is entering correcrt word
