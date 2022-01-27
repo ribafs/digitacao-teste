@@ -16,3 +16,17 @@ procurei" "um" "texto" "contendo" "as" "palavras
 Faltou apenas colocar as aspas no início da primeira palavra e ao final da última.
 
 
+Também procurei uma rotina em jS para remover as palavras duplicadas de string
+https://stackoverflow.com/questions/16843991/remove-occurrences-of-duplicate-words-in-a-string
+
+Array.prototype.removeDuplicate = function(){
+   var result = [];
+   for(var i =0; i < this.length ; i++){
+       if(result.indexOf(this[i]) == -1) result.push(this[i]);
+   }
+   return result;
+}
+var str = "spanner, span, spaniel, span";
+str = str.replace(/[ ]/g,"").split(",").removeDuplicate().join(", ");
+
+
